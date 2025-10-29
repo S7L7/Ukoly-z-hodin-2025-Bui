@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <cctype>
+#include <sstream>
+
+using namespace std;
+int main(){
+    cout << "Vánoce jsou za rohem, vytvoř si svůj vánoční stromeček" << endl;
+
+    int vyska_koruny;
+    int sirka_kmene;
+    int vyska_kmene;
+
+    cout << "první zadej výšku koruny"  << endl;
+    cin >> vyska_koruny;
+
+    cout << "jako další zadej šířku kmene" << endl;
+    cin >> sirka_kmene;
+
+    cout << "jako poslední zadej výšku kmene" << endl;
+    cin >> vyska_kmene;
+} // volání funkcí

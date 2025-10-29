@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+class Obdelnik {
+   private: 
+    int a = 10;
+    int b = 12;
+    public:
+    void tisk(){
+        cout << "Strana a: " << a << ", Strana b: " << b << endl;
+    }
+    void zmen_a(int a) {
+        this->a = a;
+    }
+};
+
+int main() {
+Obdelnik Obdelnik1;
+    Obdelnik1.tisk();
+    Obdelnik1.zmen_a(5);
+    Obdelnik1.tisk();
+    return 0;
+}

@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+    ifstream soubor("AOC23_1.txt");
+    string radek;
+    if(!soubor.is_open()){
+        cout << "soubor se nepodařilo otevřít" << endl;
+    }else {
+        while ( getline(soubor, radek))
+        cout<<radek<< endl;
+        for(char znak:radek){
+            if(isdigit(znak)){
+                cout<<znak;
+                break;
+            }
+        }
+
+        //getline(soubor, radek);
+        //cout <<radek<< endl;
+        //getline(soubor, radek);
+        //cout <<radek<< endl;
+    }
+}
