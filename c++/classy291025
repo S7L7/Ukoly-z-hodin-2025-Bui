@@ -13,12 +13,25 @@ class Obdelnik {
     void zmen_a(int a) {
         this->a = a;
     }
+    void zmen_b(int b) {
+        this->b = b;
+    }
+    void obvod() {
+        cout << "Obvod obdelniku je: " << 2 * (a + b) << endl;
+    }
+    void obsah() {
+        cout << "Obsah obdelniku je: " << a * b << endl;
+    }
+
 };
 
 int main() {
 Obdelnik Obdelnik1;
     Obdelnik1.tisk();
     Obdelnik1.zmen_a(5);
+    Obdelnik1.zmen_b(4);
     Obdelnik1.tisk();
+    Obdelnik1.obvod();
+    Obdelnik1.obsah(); 
     return 0;
 }
